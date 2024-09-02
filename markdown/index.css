@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+.mainHeader {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainTitle {
+  color: white;
+  font-size: 7rem;
+}
+
+.div {
+  padding: 70px 15%;
+}
+.talents ul li {
+  margin: 15px;
+}
+
+.loveditems {
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 75%;
+  list-style: none;
+}
+
+.imgdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
