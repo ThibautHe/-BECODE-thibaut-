@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #2d4480;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  position: relative;
+  width: 288px;
+  height: 469px;
+  background: white;
+  border-radius: 27px;
+  margin: auto;
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.hero h1 {
+  text-align: center;
+  font-family: Noto Sans Symbols;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  font-family: Noto Sans Symbols;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 32.8px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/* Set the list image as background image*/
+li::before {
+  position: relative;
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  /* Height of the list image*/
+  height: 20px;
+
+  /* Width of the list image*/
+  width: 20px;
+
+  background-position: center;
+  background-size: 20px;
+}
+
+li[data-status="x"]::before {
+  background-image: url("../Assets/x.png");
+}
+li[data-status="v"]::before {
+  background-image: url("../Assets/v.png");
+}
+
+hr {
+  margin-top: 10px;
+}
+
+h2 {
+  font-family: Noto Sans Symbols;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.13em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 span {
+  font-family: Allan;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+  color: #2d4480;
+  display: block;
+  transform: translateX(50px);
+  text-transform: capitalize;
+}
+
+button {
+  position: absolute;
+  background-color: #ffbc0f;
+  bottom: 0;
+  left: 50%;
+  width: 181px;
+  height: 68px;
+  color: #253868;
+  border: none;
+  border-radius: 27px;
+
+  font-family: Noto Sans Symbols;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 32.8px;
+  letter-spacing: 0.06em;
+  text-align: center;
+
+  text-transform: uppercase;
+  transform: translate(-50%, 50%);
+}

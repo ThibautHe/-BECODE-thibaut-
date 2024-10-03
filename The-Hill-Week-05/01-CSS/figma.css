@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
+  text-align: left;
+}
+
+.container {
+  background-color: #d74949;
+  height: 100vh;
+}
+
+.content {
+  background-color: #f3f3f3;
+  max-width: 1110px;
+  height: 90%;
+  margin: auto;
+  padding: 49px;
+  box-sizing: border-box;
+}
+
+.footer {
+  background-color: #3a3a3a;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+h1 {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16.41px;
+  text-align: left;
+}
+h2 {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 18.75px;
+  letter-spacing: 0.07em;
+  text-align: right;
+}
+
+.ptext {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23.44px;
+}
+.content p span {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23.44px;
+  text-align: center;
+  color: #8f2727;
+}
+
+img {
+  width: 200px;
+  height: 185px;
+}
+
+.card {
+  overflow: hidden;
+  width: 200px;
+  height: 300px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.card h1 {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
+  letter-spacing: 0.04em;
+}
+
+.card p {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16.41px;
+}
+
+.card div img {
+  width: 18px;
+  height: 18px;
+}
+
+.card-text {
+  margin: 9px 20px;
+  box-sizing: border-box;
+}
+.card-text div,
+p,
+h1 {
+  margin: 9px 0px;
+}
