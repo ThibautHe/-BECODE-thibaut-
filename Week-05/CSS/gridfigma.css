@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-section
+{
+    background: rgba(58, 61, 70, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.nav-section .container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+
+}
+.container
+{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container ul
+{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: white;
+}
+
+main
+{
+    background: rgba(35, 35, 35, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    padding: 0 50px;
+}
+
+.line
+{
+    height: 2px;
+    background-color: gray;
+    margin-bottom: 20px;
+}
+
+
+.yellow
+{
+    color: rgba(255, 184, 0, 1);
+}
+
+.main-content h1
+{
+    font-family: Raleway;
+font-size: 55px;
+font-weight: 800;
+line-height: 65px;
+letter-spacing: 0.04em;
+text-align: left;
+color: white;
+white-space: nowrap;
+margin-bottom: 15px;
+}
+.main-content h2
+{
+    color: rgba(0, 125, 252, 1);
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    margin-bottom: 15px;
+
+}
+
+hr{
+    margin-bottom: 15px;
+
+}
+
+.main-content p
+{
+    max-width: 70%;
+    color: white;
+    margin-bottom: 15px;
+
+}
+
+.img-div{
+    display: flex;
+    justify-content: center;
+}
+
+.btn
+{
+    padding: 15px 30px;
+    background-color: yellow;
+    display: inline-block;
+    border-radius: 100px;
+}
+
+img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news
+{
+    padding: 50px 0;
+}
+
+.news h2
+{
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.news-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    max-height: 600px;
+    gap: 5px;
+}
+.news-grid .main
+{
+grid-row: 1/3;
+}
