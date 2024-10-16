@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: barlow;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*reset above*/
+body {
+  position: relative;
+  background: linear-gradient(236.56deg, #2C2D65 0.35%, #201F22 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.container, footer .container, .ipsum .container {
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+nav {
+  position: relative;
+  margin-bottom: 50px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav:after {
+  content: "";
+  position: absolute;
+  width: 730px;
+  height: 750px;
+  top: -120%;
+  right: 0%;
+  background-image: url("./assets/deco1.png");
+  z-index: -1;
+}
+nav .container, nav .ipsum .container, .ipsum nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .container ul, nav .ipsum .container ul, .ipsum nav .container ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.hero {
+  margin-bottom: 200px;
+}
+.hero .content {
+  position: relative;
+  max-width: 50%;
+}
+.hero .content::before {
+  content: "";
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: -12%;
+  left: -10%;
+  background-image: url("./assets/deco3 1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: rotate 45s linear infinite;
+}
+.hero .content::after {
+  content: "";
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  bottom: -10%;
+  right: 30%;
+  background-image: url("./assets/deco2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.hero .content h1 {
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 25px;
+  font-family: Barlow;
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 76.8px;
+  letter-spacing: 0.045em;
+}
+.hero .content h2 {
+  text-transform: uppercase;
+  color: rgb(232, 171, 54);
+  margin-bottom: 25px;
+  font-family: Barlow;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38.4px;
+  letter-spacing: 0.045em;
+}
+.hero .content p {
+  width: 75%;
+  margin-bottom: 25px;
+  font-family: Barlow;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0.045em;
+  color: white;
+}
+.button, .lorem .lorem-text a, .hero .buttons a {
+  font-family: Barlow;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+  letter-spacing: 0.045em;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 150px;
+  padding: 15px 25px;
+  background-color: white;
+  text-transform: uppercase;
+}
+
+.redBtn, .lorem .lorem-text a, .hero .buttons a:first-child {
+  margin-right: 25px;
+  background-color: rgb(230, 96, 108);
+  color: white;
+}
+
+.lorem .container, .lorem footer .container, footer .lorem .container, .lorem .ipsum .container, .ipsum .lorem .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+.lorem .lorem-img {
+  width: 100%;
+}
+.lorem .lorem-img img {
+  width: 100%;
+}
+.lorem .lorem-text {
+  position: relative;
+  padding-top: 25px;
+  width: 80%;
+  color: white;
+  line-height: 32px;
+}
+.lorem .lorem-text h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.lorem .lorem-text p {
+  font-weight: 400;
+  opacity: 0.5;
+}
+.lorem .lorem-text h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.lorem .lorem-text * {
+  margin-bottom: 25px;
+}
+.lorem .lorem-text::after {
+  content: "";
+  position: absolute;
+  top: 15%;
+  right: 0;
+  width: 175px;
+  height: 175px;
+  background-image: url("./assets/Ellipse 1.png");
+  background-size: cover;
+  z-index: -1;
+}
+
+.ipsum .container {
+  max-width: 1440px;
+}
+.ipsum .ipsum-text {
+  position: relative;
+  text-align: center;
+  max-width: 50%;
+  margin: auto;
+  margin-bottom: 100px;
+  color: white;
+}
+.ipsum .ipsum-text p {
+  opacity: 0.5;
+  line-height: 32px;
+}
+.ipsum .ipsum-text p:first-child {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.ipsum .ipsum-text h1 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.ipsum .ipsum-text * {
+  margin-bottom: 20px;
+}
+.ipsum .ipsum-text::before {
+  content: "";
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: -12%;
+  left: 5%;
+  background-image: url("./assets/deco3 1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: rotate 45s linear infinite;
+}
+.ipsum .content {
+  display: flex;
+  gap: 25px;
+  justify-content: space-between;
+}
+.ipsum .content .card {
+  background: linear-gradient(180deg, #4D4F95 0%, #2B2D66 100%);
+  border-radius: 25px;
+  box-sizing: border-box;
+}
+.ipsum .content .card-img {
+  display: flex;
+  justify-content: center;
+}
+.ipsum .content .text {
+  padding: 40px 25px;
+  box-sizing: border-box;
+  color: white;
+}
+.ipsum .content .text p:first-child {
+  margin-bottom: 30px;
+  font-family: Barlow;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: left;
+}
+.ipsum .content .text p:last-child {
+  opacity: 0.5;
+}
+.ipsum .content img {
+  width: 100%;
+}
+
+footer .footer-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+footer hr {
+  opacity: 0.07;
+}
+footer li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+footer h1 {
+  margin-bottom: 25px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Barlow;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  text-transform: uppercase;
+}
+footer a {
+  color: white;
+}
+
+hr {
+  margin-bottom: 15px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.copyright > p {
+  opacity: 0.5;
+}
+.copyright div {
+  display: flex;
+  gap: 15px;
+}
+
+.logo {
+  font-family: Barlow;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 38.4px;
+  text-align: left;
+}
+.logo span {
+  font-family: Barlow;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 38.4px;
+  text-align: left;
+  color: rgb(230, 96, 108);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=index.css.map */
