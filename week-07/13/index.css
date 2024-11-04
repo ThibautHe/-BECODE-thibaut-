@@ -1,0 +1,24 @@
+form {
+  background: gray;
+  box-sizing: border-box;
+  padding: 25px;
+}
+
+div div {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: block;
+  margin: auto;
+}
+
+.error{
+  color: red;
+}
+.success{
+  color: green;
+}
