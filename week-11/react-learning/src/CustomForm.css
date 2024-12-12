@@ -1,0 +1,35 @@
+/* Neutral state before submission */
+input.neutral {
+  border: 1px solid gray;
+}
+
+/* Valid input */
+input.valid {
+  border: 1px solid green;
+}
+
+/* Invalid input */
+input.error {
+  border: 1px solid red;
+}
+
+/* Focus styles */
+input:focus {
+  border: 3px solid #555;
+  outline: none;
+}
+
+/* Focus style for error state */
+input.error:focus {
+  border: 3px solid darkred;
+}
+
+/* Focus style for valid state */
+input.valid:focus {
+  border: 3px solid darkgreen;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
